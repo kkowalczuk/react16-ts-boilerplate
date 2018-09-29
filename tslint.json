@@ -1,7 +1,6 @@
 {
   "extends": [
-    "tslint:recommended",
-    "tslint:react"
+    "tslint:recommended"
   ],
   "rules": {
     "max-line-length": {
@@ -30,6 +29,22 @@
     "quotemark": [
       true,
       "double"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "grouped-imports": true,
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "member-access": [
+      true,
+      "no-public"
     ]
   }
 }

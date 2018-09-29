@@ -14,5 +14,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "experimentalDecorators": true,
-  }
+  },
+  "include": [
+    "src",
+  ],
+  "exclude": [
+    "src/**/*.spec.(ts|tsx)"
+  ]
 }
