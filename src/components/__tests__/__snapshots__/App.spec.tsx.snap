@@ -2,11 +2,7 @@
 
 exports[`App component renders correctly with blue background 1`] = `
 <h1
-  style={
-    Object {
-      "backgroundColor": "blue",
-    }
-  }
+  style="background-color: blue;"
 >
   Welcome!
 </h1>
@@ -14,11 +10,7 @@ exports[`App component renders correctly with blue background 1`] = `
 
 exports[`App component renders correctly with red background 1`] = `
 <h1
-  style={
-    Object {
-      "backgroundColor": "red",
-    }
-  }
+  style="background-color: red;"
 >
   Welcome!
 </h1>

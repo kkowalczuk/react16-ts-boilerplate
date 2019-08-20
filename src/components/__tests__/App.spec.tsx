@@ -1,4 +1,4 @@
-import { shallow } from "enzyme"
+import { render } from "@testing-library/react"
 import "jest"
 import * as React from "react"
 
@@ -6,12 +6,12 @@ import App from "../App"
 
 describe("App component", () => {
   it("renders correctly with red background", () => {
-    const component = shallow(<App color="red" />)
-    expect(component).toMatchSnapshot()
+    const { container } = render(<App color="red" />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 
   it("renders correctly with blue background", () => {
-    const component = shallow(<App color="blue" />)
-    expect(component).toMatchSnapshot()
+    const { container } = render(<App color="blue" />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
